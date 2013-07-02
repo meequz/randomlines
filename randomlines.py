@@ -68,7 +68,6 @@ for main_cn in range(times):
 		q_lines_drawing = draw_lines(max_line_len)
 		pygame.image.save(screen, im_filenames[cn])
 		#~ print the progress
-		#~ message = 'Image {}, stage {}/5 done. Processing stage {}...'.format(main_cn+1, cn+1, cn+2)
 		message = 'Image {}, stage {}/5...'.format(main_cn+1, cn+2)
 		print_message(message)
 		screen.fill((0,0,0), special_flags=0)
@@ -87,7 +86,6 @@ for main_cn in range(times):
 			draw.point((i, j), (255-a, 255-b, 255-c, d/2))
 	image.save(im_filenames[2], 'PNG')
 		#~ print the progress
-	#~ message = 'Image {}, stage 4/5 done. Processing stage 5...'.format(main_cn+1)
 	message = 'Image {}, stage 5/5...'.format(main_cn+1)
 	print_message(message)
 	del draw
